@@ -16,7 +16,7 @@ class MainWindow:
         f = Frame(self.master, height=1080, width=1920, bg="azure", relief="ridge", bd=20)
         f.propagate(0)
         f.pack()
-        self.man = PhotoImage(file="E:\OSTL\MiniProject\Resources\\imag.png")
+        self.man = PhotoImage(file="./Resources/imag.png")
         imgMan = Label(f, image=self.man, bg="azure")
         imgMan.place(x=0, y=60)
 
@@ -54,7 +54,7 @@ class Register:
         f1.propagate(0)
         f1.pack()
 
-        self.regNow = PhotoImage(file="E:\OSTL\MiniProject\Resources\\RegisterNow.png")
+        self.regNow = PhotoImage(file="./Resources/RegisterNow.png")
         imgRegNow = Label(f1, image=self.regNow, bg="azure")
         imgRegNow.place(x=550, y=5)
 
@@ -368,7 +368,7 @@ class Quiz:
                              font=("Helvetica", 10, "bold italic"), command=self.Submit).place(x=100, y=400)
 
         imgID = random.randint(1, 4)
-        filestr = "E:\OSTL\MiniProject\Resources\\" + str(imgID) + ".png"
+        filestr = "./Resources//" + str(imgID) + ".png"
         self.quizImg = PhotoImage(file=filestr)
         img = Label(f, image=self.quizImg, bg="azure")
         img.place(x=700, y=200)
